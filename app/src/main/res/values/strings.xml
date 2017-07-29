@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Oszczedzanie2</string>
+
+    <string-array name="settings">
+        <item>Cele</item>
+        <item>Moje ustawienia</item>
+        <item>Statystyki</item>
+    </string-array>
+
+</resources>
