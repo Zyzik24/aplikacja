@@ -1,6 +1,5 @@
 package com.example.zuzia.oszczedzanie2;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(itemClickListener);
     }
 
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        visibilityList=false;
+        listView.setVisibility(View.INVISIBLE);
+    }
+
     public Class getClassList(int position)
     {
         switch (position)
@@ -69,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
+            listView.setVisibility(View.INVISIBLE);
+            visibilityList=false;
         return true;
     }
 }

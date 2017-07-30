@@ -16,6 +16,7 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FF000000</item>
     </style>
 
 </resources>
